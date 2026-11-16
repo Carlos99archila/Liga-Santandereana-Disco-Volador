@@ -1,0 +1,54 @@
+
+name: Deploy Blazor WebAssembly to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Publish Blazor WebAssembly
+        run: dotnet publish BlazorLiga/BlazorLiga.csproj -c Release
+
+      - name: Configure base href
+        run: |
+          sed -i 's|<base href="/" />|<base href="/Liga-Santandereana-Disco-Volador/" />|' BlazorLiga/bin/Release/net10.0/publish/wwwroot/index.html
+
+      - name: Configure GitHub Pages
+        run: |
+          touch BlazorLiga/bin/Release/net10.0/publish/wwwroot/.nojekyll
+          cp BlazorLiga/bin/Release/net10.0/publish/wwwroot/index.html BlazorLiga/bin/Release/net10.0/publish/wwwroot/404.html
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: BlazorLiga/bin/Release/net10.0/publish/wwwroot
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
