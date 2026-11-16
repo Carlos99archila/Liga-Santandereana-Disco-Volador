@@ -1,0 +1,39 @@
+:root {
+    /* COLORES PRINCIPALES */
+    --color-primary: #ffffff;
+    --color-secondary: #ededed;
+
+    /* COLORES DE FONDO */
+    --color-background-primary: #ffffff;
+    --color-background-secondary: #ededed;
+    --color-background-footer: #d1d0d0;
+
+    /* COLORES DE TEXTO */
+    --color-text: #070707;
+    --color-text-footer: #ffffff;
+}
+
+/* TÍTULOS */
+h1, h2, h3, h4, h5, h6, .text-primary{
+    color: var(--color-text);
+    font-family: 'Russo One', sans-serif;
+}
+
+/* DESCRIPCIÓN */
+p, .text-secondary {
+    color: var(--color-text);
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+/* FONDO PRINCIPAL */
+.container-primary {
+    background-color: var(--color-background-primary);
+    color: var(--color-text);
+}
+
+/* FONDO SECUNDARIO */
+.container-secondary {
+    background-color: var(--color-background-secondary);
+    color: var(--color-text);
+}

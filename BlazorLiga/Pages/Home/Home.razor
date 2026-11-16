@@ -1,0 +1,97 @@
+﻿@page "/"
+
+<PageTitle>Liga Santandereana de Disco Volador</PageTitle>
+
+<div>
+    <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="5"></button>
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="6"></button>
+            <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="7"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/banner/Banner1.jpg" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner/Banner2.jpg" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner/Banner3.jpg" class="d-block w-100" alt="Imagen 3">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner/Banner4.jpg" class="d-block w-100" alt="Imagen 4">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner/Banner5.jpg" class="d-block w-100" alt="Imagen 5">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner/Banner6.jpg" class="d-block w-100" alt="Imagen 6">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner/Banner7.jpg" class="d-block w-100" alt="Imagen 7">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner/Banner8.jpg" class="d-block w-100" alt="Imagen 8">
+            </div>
+        </div>
+
+        <!-- Botón anterior -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- Botón siguiente -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="w-75 mx-auto p-3">
+        <h1 class="d-flex justify-content-center">¿QUIENES SOMOS?</h1>
+        <p>
+            La Liga Santandereana de Disco Volador es una organización deportiva constituida en el año 2019,
+            dedicada a
+            promover
+            y
+            fortalecer la práctica del disco volador (Ultimate Frisbee) en el departamento de Santander.
+
+            Trabajamos para impulsar este deporte, apoyar a los deportistas y fomentar la creación de espacios de
+            participación
+            y
+            formación, promoviendo valores como el respeto, el compañerismo, el trabajo en equipo y el juego limpio.
+
+            Nuestro objetivo es seguir haciendo crecer el Ultimate en Santander y llevar este deporte a más personas
+            y
+            comunidades.
+        </p>
+    </div>
+</div>
+<div class="container-secondary p-3">
+    <h1 class="d-flex justify-content-center">CLUBES AFILIADOS</h1>
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
+        @foreach (var club in equipos.Values)
+        {
+            <div class="col">
+                <a href="@club.Enlace"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="gallery-item d-block"
+                   title="@($"Club Deportivo asdf {club.Nombre}")">
+
+                    <img src="@club.Imagen"
+                         class="img-fluid"
+                         alt="@club.Nombre" />
+
+                </a>
+            </div>
+        }
+    </div>
+</div>

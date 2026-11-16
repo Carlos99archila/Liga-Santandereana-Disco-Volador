@@ -1,0 +1,40 @@
+/* NAVEGACIÓN */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* ENLACES */
+.main-nav ::deep .nav-link {
+    color: var(--color-text);
+    border: none;
+    background: transparent;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* HOVER */
+.main-nav ::deep .nav-link:hover {
+    background-color: var(--color-background-secondary);
+    border-radius: 5px;
+}
+
+/* ELEMENTO ACTIVO */
+.main-nav ::deep .nav-link.active {
+    font-weight: 600;
+}
+
+/* MÓVILES */
+@media (max-width: 767.98px) {
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-nav ::deep .nav-link {
+        text-align: center;
+        width: 100%;
+    }
+}

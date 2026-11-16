@@ -1,0 +1,74 @@
+/* CONTENEDOR DE CADA IMAGEN */
+/* GALERÍA */
+.row {
+    row-gap: 1rem;
+}
+
+/* CONTENEDOR DE CADA IMAGEN */
+.gallery-item {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: var(--color-background-primary);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+/* IMÁGENES */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* EFECTO HOVER */
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+/* TABLETS */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .gallery-item {
+        height: 190px;
+    }
+}
+
+/* MÓVILES */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+
+    .gallery-item {
+        height: 150px;
+    }
+}
+
+#carouselPrincipal {
+    width: 100%;
+    overflow: hidden;
+}
+
+#carouselPrincipal .carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 768px) {
+    #carouselPrincipal .carousel-item img {
+        height: 300px;
+    }
+}

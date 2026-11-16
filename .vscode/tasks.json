@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Blazor: Hot Reload",
+            "type": "shell",
+            "command": "dotnet watch run",
+            "options": {
+                "cwd": "${workspaceFolder}/Blazor_Liga"
+            },
+            "isBackground": true,
+            "problemMatcher": []
+        }
+    ]
+}
