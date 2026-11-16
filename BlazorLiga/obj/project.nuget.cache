@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MYW8yng1Nf4=",
+  "dgSpecHash": "UZ0vMBYb8kw=",
   "success": true,
-  "projectFilePath": "D:\\Usuarios\\carlos.archila\\Desktop\\Carlos Archila\\Liga-Santandereana-Disco-Volador\\BlazorLiga\\BlazorLiga.csproj",
+  "projectFilePath": "d:\\Usuarios\\carlos.archila\\Desktop\\Carlos Archila\\Liga-Santandereana-Disco-Volador\\BlazorLiga\\BlazorLiga.csproj",
   "expectedPackageFiles": [
     "D:\\Usuarios\\carlos.archila\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.8\\microsoft.aspnetcore.app.internal.assets.10.0.8.nupkg.sha512",
     "D:\\Usuarios\\carlos.archila\\.nuget\\packages\\microsoft.aspnetcore.authorization\\10.0.8\\microsoft.aspnetcore.authorization.10.0.8.nupkg.sha512",
@@ -41,10 +41,10 @@
     {
       "code": "NU1900",
       "level": "Warning",
-      "message": "Error al obtener los datos de vulnerabilidad del paquete: No se puede cargar el índice de servicio del origen https://nuget.telerik.com/v3/index.json.",
-      "projectPath": "D:\\Usuarios\\carlos.archila\\Desktop\\Carlos Archila\\Liga-Santandereana-Disco-Volador\\BlazorLiga\\BlazorLiga.csproj",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://nuget.telerik.com/v3/index.json.",
+      "projectPath": "d:\\Usuarios\\carlos.archila\\Desktop\\Carlos Archila\\Liga-Santandereana-Disco-Volador\\BlazorLiga\\BlazorLiga.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\Usuarios\\carlos.archila\\Desktop\\Carlos Archila\\Liga-Santandereana-Disco-Volador\\BlazorLiga\\BlazorLiga.csproj",
+      "filePath": "d:\\Usuarios\\carlos.archila\\Desktop\\Carlos Archila\\Liga-Santandereana-Disco-Volador\\BlazorLiga\\BlazorLiga.csproj",
       "targetGraphs": []
     }
   ]

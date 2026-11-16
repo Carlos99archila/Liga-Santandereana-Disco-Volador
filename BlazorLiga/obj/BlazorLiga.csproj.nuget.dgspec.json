@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Usuarios\\carlos.archila\\Desktop\\Carlos Archila\\Liga-Santandereana-Disco-Volador\\BlazorLiga\\BlazorLiga.csproj": {}
+    "d:\\Usuarios\\carlos.archila\\Desktop\\Carlos Archila\\Liga-Santandereana-Disco-Volador\\BlazorLiga\\BlazorLiga.csproj": {}
   },
   "projects": {
-    "D:\\Usuarios\\carlos.archila\\Desktop\\Carlos Archila\\Liga-Santandereana-Disco-Volador\\BlazorLiga\\BlazorLiga.csproj": {
+    "d:\\Usuarios\\carlos.archila\\Desktop\\Carlos Archila\\Liga-Santandereana-Disco-Volador\\BlazorLiga\\BlazorLiga.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Usuarios\\carlos.archila\\Desktop\\Carlos Archila\\Liga-Santandereana-Disco-Volador\\BlazorLiga\\BlazorLiga.csproj",
+        "projectUniqueName": "d:\\Usuarios\\carlos.archila\\Desktop\\Carlos Archila\\Liga-Santandereana-Disco-Volador\\BlazorLiga\\BlazorLiga.csproj",
         "projectName": "BlazorLiga",
-        "projectPath": "D:\\Usuarios\\carlos.archila\\Desktop\\Carlos Archila\\Liga-Santandereana-Disco-Volador\\BlazorLiga\\BlazorLiga.csproj",
+        "projectPath": "d:\\Usuarios\\carlos.archila\\Desktop\\Carlos Archila\\Liga-Santandereana-Disco-Volador\\BlazorLiga\\BlazorLiga.csproj",
         "packagesPath": "D:\\Usuarios\\carlos.archila\\.nuget\\packages\\",
-        "outputPath": "D:\\Usuarios\\carlos.archila\\Desktop\\Carlos Archila\\Liga-Santandereana-Disco-Volador\\BlazorLiga\\obj\\",
+        "outputPath": "d:\\Usuarios\\carlos.archila\\Desktop\\Carlos Archila\\Liga-Santandereana-Disco-Volador\\BlazorLiga\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
