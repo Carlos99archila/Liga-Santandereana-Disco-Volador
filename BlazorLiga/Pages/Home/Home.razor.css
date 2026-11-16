@@ -30,26 +30,13 @@
 
 /* TABLETS */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 1.7rem;
-    }
-
-    .gallery-item {
-        height: 190px;
+    #carouselPrincipal .carousel-item img {
+        height: 300px;
     }
 }
 
 /* MÓVILES */
 @media (max-width: 576px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 0.95rem;
-        text-align: left;
-    }
-
     .gallery-item {
         height: 150px;
     }
@@ -65,10 +52,4 @@
     height: 500px;
     object-fit: cover;
     object-position: center;
-}
-
-@media (max-width: 768px) {
-    #carouselPrincipal .carousel-item img {
-        height: 300px;
-    }
 }
