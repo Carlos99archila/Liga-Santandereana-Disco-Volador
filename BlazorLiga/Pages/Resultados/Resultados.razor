@@ -1,0 +1,87 @@
+﻿@page "/resultados"
+
+<PageTitle>Resultados</PageTitle>
+
+<div class="container-primary">
+    <h1 class="text-center p-3 pb-0">RESULTADOS</h1>
+
+    <nav class="navbar">
+        <div class="container-fluid justify-content-center">
+            <button class="@GetButtonClass("Mixto")" @onclick='() => Seleccionar("Mixto")'>
+                Mixto
+            </button>
+
+            <button class="@GetButtonClass("Maculino")" @onclick='() => Seleccionar("Maculino")'>
+                Maculino
+            </button>
+
+            <button class="@GetButtonClass("Femenino")" @onclick='() => Seleccionar("Femenino")'>
+                Femenino
+            </button>
+
+            <button class="@GetButtonClass("Playa")" @onclick='() => Seleccionar("Playa")'>
+                Playa
+            </button>
+
+            <button class="@GetButtonClass("Sub-24")" @onclick='() => Seleccionar("Sub-24")'>
+                Sub-24
+            </button>
+        </div>
+    </nav>
+</div>
+
+
+@if (opcionSeleccionada == "Mixto")
+{
+    <div class="container-primary">
+        <h1 class="text-center p-3 pb-0">1</h1>
+    </div>
+}
+
+@if (opcionSeleccionada == "Maculino")
+{
+    <div class="container-primary">
+        <h1 class="text-center p-3 pb-0">2</h1>
+    </div>
+}
+
+@if (opcionSeleccionada == "Femenino")
+{
+    <div class="container-primary">
+        <h1 class="text-center p-3 pb-0">3</h1>
+    </div>
+}
+
+@if (opcionSeleccionada == "Playa")
+{
+    <div class="container-primary">
+        <h1 class="text-center p-3 pb-0">4</h1>
+    </div>
+}
+
+@if (opcionSeleccionada == "Sub-24")
+{
+    <div class="container-primary">
+        <h1 class="text-center p-3 pb-0">5</h1>
+    </div>
+}
+
+<div class="container-primary">
+    <div class="row align-items-center m-0 p-0">
+        <div class="col-md-6 col-sm-12 px-3">
+            <h2 class="text-center pt-3">DISC GOLF</h2>
+            <p>
+                El Disc Golf es una disciplina deportiva individual o por equipos en la que los jugadores deben recorrer
+                diferentes estaciones lanzando discos voladores hacia canastas metálicas especiales, buscando completar
+                cada recorrido con el menor número de lanzamientos posible.<br> Es una actividad que requiere precisión,
+                concentración y habilidad técnica, combinando la estrategia deportiva con el contacto con la naturaleza.
+                Puede practicarse de manera recreativa o competitiva en parques y espacios al aire libre.
+            </p>
+        </div>
+        <div class="col-md-6 col-sm-12 m-0 p-0">
+            <div class="foto-modalidad">
+                <img src="images/modalidades/discgolf.jpg" lass="mod-img" alt="Ultimate Frisbee en césped" />
+            </div>
+        </div>
+    </div>
+</div>

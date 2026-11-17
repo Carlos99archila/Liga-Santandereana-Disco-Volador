@@ -1,0 +1,20 @@
+.foto-modalidad[b-j5cxa74eie] {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.foto-modalidad img[b-j5cxa74eie] {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .foto-modalidad[b-j5cxa74eie] {
+        height: 250px;
+    }
+}
